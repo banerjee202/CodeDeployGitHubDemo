@@ -1,6 +1,6 @@
 .align {
-    margin-right:50px;
-    margin-top: 20px;
-    text-align: right;
-    color: blue;
+    position: fixed;
+    top: 3%;
+    left: 90%;
+    color: rgb(240, 162, 16);
 }
