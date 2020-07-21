@@ -2,8 +2,9 @@
 .logoAlign {
     position: fixed;
     top: 2%;
-    width: 10%;
-    height: 6%;    
+    width: 3%;
+    height: auto; 
+    left:4%   
 }
 
 .imageContainer {

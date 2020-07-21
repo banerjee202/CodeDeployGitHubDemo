@@ -1,6 +1,6 @@
 import React from 'react';
 import './Logo.css'
-import ctsLogo from "./CTS_Logo.png"
+import ctsLogo from "./Cognizantlogo.png"
 
 const Logo = props =>(
    <div className="imageContainer">

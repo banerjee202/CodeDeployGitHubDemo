@@ -10,7 +10,8 @@ class Clock extends Component {
         hours : '',
         mins : '',
         secs : '',
-        merd : ''
+        merd : '',
+        todayDate:''
     };
 
     componentDidMount() {
@@ -20,10 +21,12 @@ class Clock extends Component {
     }
 
     showClock = () => {
-       let date = new Date();
-       let hour = date.getHours();
-       let min = this.appendZero(date.getMinutes());
-       let secs = this.appendZero(date.getSeconds());
+       let tempDate = new Date();
+       var date = (tempDate.getMonth()+1)+ '-' + tempDate.getDate()+ '-' +tempDate.getFullYear() ;
+     
+       let hour = tempDate.getHours();
+       let min = this.appendZero(tempDate.getMinutes());
+       let secs = this.appendZero(tempDate.getSeconds());
 
        let twelveHour = this.appendZero(this.getTwelveHour(hour));
        let meridium = this.getMeridium(hour);
@@ -32,14 +35,22 @@ class Clock extends Component {
             hours : twelveHour,
             mins : min,
             secs : secs,
-            merd : meridium
+            merd : meridium,
+            todayDate : date
         });
 
     }
     
     render() {
         return (
-        <div className="align">{this.state.hours + ':' + this.state.mins + ':' + this.state.secs + ' ' + this.state.merd}</div>    
+        <div className="align">
+            <div>
+            {this.state.todayDate}
+            </div>
+            <div>
+             {this.state.hours + ':' + this.state.mins + ':' + this.state.secs + ' ' + this.state.merd} 
+            </div>
+        </div>    
         );
     }
 
