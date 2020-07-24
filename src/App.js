@@ -14,11 +14,13 @@ function App() {
 
       <Navbar/>
       <Logo/>
-      <main style={{marginTop:'66px'}}>
-      <HomeDashboard/>
+     
   
-      <Clock/>      
-      </main>
+      <Clock/>  
+      <main style={{marginTop:'96px'}}>
+     <HomeDashboard/>   
+     
+      </main> 
     </div>
   );
 }
