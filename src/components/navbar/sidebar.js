@@ -1,19 +1,17 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
-import './sidebar.css'
+import "./sidebar.css";
 
-export default props => {
+export default (props) => {
   return (
-    <Menu>
+    <Menu width={"150px"}>
       <a className="menu-item" href="/">
-         Dashboard
+        Home
       </a>
 
       <a className="menu-item" href="/burgers">
         Login
       </a>
-
-      
     </Menu>
   );
 };

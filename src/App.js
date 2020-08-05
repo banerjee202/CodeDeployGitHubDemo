@@ -3,15 +3,24 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar/Nav';
 import SideBar from "./components/navbar/sidebar";
+import HomeDashboard from './components/home/homedashboard';
+import Clock from "./components/clock/clock"
+import Logo from './components/Logo/Logo';
 function App() {
   return (
     <div>
       
       <SideBar/>
+
       <Navbar/>
-      <main style={{marginTop:'66px'}}>
-      <p>Here is the main content</p>
-      </main>
+      <Logo/>
+     
+  
+      <Clock/>  
+      <main style={{marginTop:'96px'}}>
+     <HomeDashboard/>   
+     
+      </main> 
     </div>
   );
 }
